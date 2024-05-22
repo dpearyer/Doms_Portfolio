@@ -1,6 +1,7 @@
-import { Buttonimrt } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import Socials from "@/components/Socials";
+import Photo from "@/components/Photo";
 
 const Home = () => {
   return (
@@ -23,11 +24,15 @@ const Home = () => {
                   <span>Download Resume</span>
                   <FiDownload className="text-xl" />
                 </Button>
-                <div>socials</div>
+                  <div className="mb-8 xl:mb-0">
+                    <Socials containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-accent flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"/>
+                  </div>
               </div>
           </div>
-          {/*text */}
-          <div>photo</div>
+          {/*photo */}
+          <div>
+            <Photo />
+            </div>
         </div>
       </div>
     </section>
